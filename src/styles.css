@@ -1,0 +1,232 @@
+my-app { padding: 0 !important; }
+body {
+    margin: 0;
+    background-color: #EDEBE9;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ }
+ * {
+    box-sizing: border-box;
+  }
+
+
+
+/*TOP TOOLBAR*/
+
+.custom-toolbar {   
+    position: relative;
+    z-index: 300;
+    height: 22px;
+    background: #3955A3;   
+    width: 100%;    
+
+
+}
+.custom-toolbar .nav-item {
+    margin: 0 15px;   
+    text-decoration: none;
+    font-size: 1.1rem; 
+    color: white;    
+    
+}
+/*MAIN MENU MIDDLE OF THE PAGE*/
+
+.main-menu-item.active:hover{
+    background-color: #4472C1;
+    border-bottom: solid 5px white;
+    transition: border-bottom 3.8s; /* Add a smooth transition for the border-bottom */
+    transition: background-color 0.3s; 
+}
+
+.main-menu-item:hover{
+    background-color: #4472C1;
+   transition: background-color 0.3s; 
+}
+
+
+/* SIDE MENU */
+.side-menu {
+    
+    
+    width: 220px;
+    list-style-type: none;  
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.side-menu .item:hover {
+    border-left: 1px solid #3955A3 !important ;
+    background-color: #3955A3;
+    color: white;
+}
+
+
+.side-menu-item {
+
+    border: 1px solid lightgrey;
+    
+   
+    width: 150px;
+    padding-left: 14px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-radius: 1px;
+}
+
+.side-menu-item:hover {
+    background-color: red; /* Background color for the link on hover */
+    color: white; /* Text color for the link on hover */
+    text-decoration: none; /* Remove the underline on hover */
+  }
+  
+
+
+
+.side-menu .item a {
+    text-decoration: none; /* Remove the underline from the links */
+}
+
+.side-menu .item a:active {
+    background-color: red; /* Background color for the active link */
+    color: white; /* Text color for the active link */
+}
+
+/*GPS*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 800px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 10px;
+    position: absolute;
+    top: 50;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Set a maximum height for the grid container */
+    max-height: 600px;
+  }
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 10px;
+  }
+  
+  .grid-item-critical, .grid-item-expected, .grid-item-alert {
+    max-height: 500px; /* Set a fixed maximum height for each grid item */
+    overflow-y: auto; /* Add vertical scrolling if the content exceeds the height */
+  }
+ 
+  .grid-header {
+    /* Set the background color for headers */
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 25px;
+    color: white;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  .grid-item {
+    border: 1px solid #ccc; /* Optional: Add borders or styling to each column */
+    margin-top: 20px;
+    padding: 100px;
+    background-color: green;
+    width:200px;
+  }
+  
+  /* Define specific styles for different elements */
+.grid-header-critical {
+    /* Add unique styles for the critical header */
+    background-color: red;
+
+  }
+  
+  .grid-header-expected {
+    /* Add unique styles for the expected header */
+    background-color: green;
+  
+  }
+  
+  .grid-header-alert {
+    /* Add unique styles for the alert header */
+    background-color: rgba(237, 125, 49);
+   
+  }
+  
+  .grid-item-critical {
+    /* Add unique styles for the critical item */
+    background-color: rgba(255, 0, 0, 0.1);
+    border :1px solid red;
+    color:red;
+    
+  }
+
+  .grid-item-critical li {
+    border: 1px solid red;  
+    margin: 10px 10px 10px -20px;
+    list-style: none; 
+    padding-left: 10px;
+  
+  }
+  
+  
+  .grid-item-expected {
+    /* Add unique styles for the expected item */
+    background-color: rgba(0, 255, 0, 0.1);
+    border :1px solid green;
+    color: green;
+  }
+  .grid-item-expected li {
+    border: 1px solid green;  
+    margin: 10px 10px 10px -20px;
+    list-style: none;   
+    padding-left: 10px;
+  }
+  .grid-item-alert  {
+    /* Add unique styles for the alert item */
+    background-color:rgba(248, 203, 173);
+    border :1px solid rgba(237, 125, 49);
+    color :rgba(237, 125, 49);
+  
+  }
+  .grid-item-alert li {
+    border: 1px solid  rgba(237, 125, 49);
+    margin: 10px 10px 10px -20px;
+    list-style: none;  
+    padding-left: 10px;
+  }
+  h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  
+  /* ORGANIZATION*/
+
+  /*  STEPPER EUDR  */
+
+  .horizontal-menu {
+    display: flex;
+    border: 0px solid #ccc;   
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #F3F2F1;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Add a box shadow at the bottom */
+    height: 43px; /* Reduce the menu height to 50 pixels */
+    padding-left:14px;
+  }
+
+  
+  /*  -----CORRECT DIT WERKT-------- */
+  
+  
+  
+
