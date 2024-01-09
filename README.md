@@ -1,7 +1,11 @@
-# MODEL-LayoutReactRouter6.2.1-VRT18.2
-MODEL-LayoutReactRouter6.2.1-VRT18.2 - Definitieve  versie Layout
+
+
+
+# TEST-LayoutReactRouter6.2.1-VRT18.2
+Test gebaseerd op: MODEL-LayoutReactRouter6.2.1-VRT18.2 - Definitieve  versie Layout
 - Empacto.core layout and navigation
-- 26/12/2023 getest geert - na te kijken met Michiel
+- 09/01/2024 - test aangemaakt op basis van model
+- bedoeling: Themes aanmaken met Themebuilder
 
 
 # Dependencies 
@@ -15,4 +19,6 @@ MODEL-LayoutReactRouter6.2.1-VRT18.2 - Definitieve  versie Layout
 - submenu 
 - Bottom menu 
 - navigation
+
+
 
